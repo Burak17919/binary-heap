@@ -1,0 +1,17 @@
+{
+  "name": "binary-heap",
+  "version": "0.1.0",
+  "description": "Stores elements in a complete binary tree array for O(1) peek and O(log n) insert and extract-min.",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": "./src/index.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "dependencies": {}
+}
