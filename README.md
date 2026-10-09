@@ -23,3 +23,10 @@ The tree is stored 1-based in a JS array (index 0 unused). That makes the parent
 ## Edge case to know about
 
 Comparators that return `0` (equal keys) are supported, but the heap breaks ties by insertion order: among comparator-equal elements, the one inserted first comes out first. This is deliberate FIFO semantics. If your comparator already produces a total order and you never see ties, this never matters; if it does not, do not assume arbitrary tie order — it is stable and documented here.
+
+## Performance
+
+The window keeps a bounded buffer, so `push` is constant time and memory does not
+grow with the length of the stream. `peak` and `trough` are linear in the window
+size, which is the trade that keeps `push` cheap.
+
