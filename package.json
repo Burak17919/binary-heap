@@ -1,6 +1,6 @@
 {
   "name": "binary-heap",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Stores elements in a complete binary tree array for O(1) peek and O(log n) insert and extract-min.",
   "type": "module",
   "main": "src/index.js",
